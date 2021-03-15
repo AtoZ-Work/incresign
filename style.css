@@ -11,9 +11,9 @@ html{
     scroll-behavior: smooth;
 }
 :root{
---first-color:  #003399 ;
+--first-color:  #000000;
 --one-color: #E6F4EA ;
---two-color: #FFCC00;
+--two-color: #fb8500 ;
 }
 /* custom scroll bar */
 ::-webkit-scrollbar {
@@ -68,7 +68,7 @@ section .title::before{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #111;
+    background: #000;
     transform: translateX(-50%);
 }
 section .title::after{
@@ -76,7 +76,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: #003399 ;
+    color: var(--two-color);
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -87,13 +87,14 @@ section .title::after{
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 30px 0;
+    background: rgba( 0, 0, 0, 0.5 );
+    padding: 15px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
 .navbar.sticky{
     padding: 15px 0;
-    background:  #003399;
+    background:  #000;
 box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.37);
 backdrop-filter: blur( 19.0px );
 -webkit-backdrop-filter: blur( 19.0px );
@@ -106,12 +107,12 @@ backdrop-filter: blur( 19.0px );
     justify-content: space-between;
 }
 .navbar .logo a{
-    color: #fff;
+    color:  #fff;
     font-size: 35px;
     font-weight: 600;
 }
 .navbar.sticky .logo a{
-    color: #fff;
+    color:  #fff;
     
 }
  .navbar .logo a span{
@@ -127,7 +128,7 @@ backdrop-filter: blur( 19.0px );
 }
 .navbar .menu li a{
     display: block;
-    color:  #E6F4EA;
+    color:  #fff;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -135,6 +136,7 @@ backdrop-filter: blur( 19.0px );
 }
 .navbar .menu li a:hover{
     color:  var(--two-color);
+   
 }
 .navbar.sticky .menu li a{
     color:var(--one-color);
@@ -155,7 +157,7 @@ backdrop-filter: blur( 19.0px );
     position: fixed;
     height: 45px;
     width: 42px;
-    background:  var(--first-color);
+    background:  var(--two-color); 
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -183,13 +185,17 @@ backdrop-filter: blur( 19.0px );
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/bg.png") no-repeat center;
+    background: url("images/bg.jpg") no-repeat left;
     height: 100vh;
-    color: #fff;
+    color: #000;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
+    backdrop-filter: blur( 0.0px );
+-webkit-backdrop-filter: blur( 0.0px );
+    /* background-color: rgb(0,0,0); */
+    /* opacity: 0.5; */
 }
 .home .max-width{
     margin: auto 0 auto 30px;
@@ -207,35 +213,35 @@ backdrop-filter: blur( 19.0px );
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color:  var(--two-color);
+    color:  var(--one-color);
     font-weight: 500;
 }
 .home .home-content a{
     display: inline-block;
     
-    background:none;
-    box-shadow: 0 2px 8px 0 rgba(162, 245, 162, 0.37);
-    backdrop-filter: blur( 19.0px );
-    -webkit-backdrop-filter: blur( 19.0px );
-
-    color:  var(--one-color);
-    font-size: 25px;
-    padding: 12px 36px;
+    background: rgba( 0, 0, 0, 0.75 );
+    
+    
+   
+   color: var(--one-color);
+    font-size: 23px;
+    padding: 12px 32px;
     margin-top: 20px;
-    font-weight: 400;
-    border-radius: 6px;
+    font-weight: 300;
+    border-radius: 50px;
    
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color:  var(--two-color);
-    background:  var(--first-color);
-    box-shadow: 0 2px 8px 0 rgba(251, 227, 3, 0.315);
+   
+   background: #000;
+    box-shadow: 0 2px 8px 0 rgba(226, 228, 255, 0.315);
 }
 
 /* about section styling */
 .about .title::after{
-    content: "who i am";
+    content: "who we are";
+    background: #f5fafd;
 }
 .about .about-content .left{
     width: 45%;
@@ -249,13 +255,16 @@ backdrop-filter: blur( 19.0px );
 .about .about-content .right{
     width: 55%;
 }
+.about{
+    background:#f5fafd;
+}
 .about .about-content .right .text{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color:  var(--first-color);
+    color:  var(--two-color);
 }
 .about .about-content .right p{
     text-align: justify;
@@ -279,29 +288,29 @@ backdrop-filter: blur( 19.0px );
 
 /* services section styling */
 .services, .teams{
-    color:#111 ;
+    color:#000613 ;
     /* background-image: linear-gradient( 180deg,  #f1630f   20%, #ffc09c 100%); */
-    background: #E6F4EA;
+    background: #f5fafd;
 }
 .services .title::before,
 .teams .title::before{
-    background: #111;
+    background: #000613;
 }
 .services .title::after,
 .teams .title::after{
-    background:#E6F4EA;
+    background:#f5fafd;
     content: "what i provide";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
+    margin-bottom:2rem;
     background: rgba( 255, 255, 255, 0.75 );
-box-shadow: 0 2px 8px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 0.0px );
--webkit-backdrop-filter: blur( 0.0px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: 0 2px 8px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.0px );
+    -webkit-backdrop-filter: blur( 0.0px );
+  
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     text-align: center;
-    border-radius: 6px;
     padding: 20px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -567,7 +576,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 /* footer section styling */
 footer{
-    background: #111;
+    background: #000613;
     padding: 15px 23px;
     color: #fff;
     text-align: center;
@@ -614,7 +623,7 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 0;
-        background:  var(--first-color);
+        background: rgba( 0, 0, 0, 0.75 );
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
