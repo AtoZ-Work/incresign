@@ -33,6 +33,7 @@ html{
 /* all similar content styling codes */
 section{
     padding: 100px 0;
+    background-color: #f5fafd;
 }
 .max-width{
     max-width: 1300px;
@@ -101,7 +102,7 @@ section .title::after{
     backdrop-filter: blur(10px);
     padding: 15px 0;
     font-family: 'Ubuntu', sans-serif;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .navbar.sticky{
     padding: 15px 0;
@@ -126,7 +127,7 @@ backdrop-filter: blur( 19.0px );
 }
  .navbar .logo a span{
     color:   var(--two-color);
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .navbar.sticky .logo a span{
     color:  var(--two-color);
@@ -141,7 +142,7 @@ backdrop-filter: blur( 19.0px );
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 }
 .navbar .menu li a:hover{
     color:  var(--two-color);
@@ -179,7 +180,7 @@ backdrop-filter: blur( 19.0px );
     cursor: pointer;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .scroll-up-btn.show{
     bottom: 30px;
@@ -236,7 +237,7 @@ backdrop-filter: blur( 19.0px );
     font-weight: 300;
     border-radius: 50px;
    
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .home .home-content a:hover{
    
@@ -285,7 +286,7 @@ backdrop-filter: blur( 19.0px );
     margin-top: 20px;
     border-radius:50px;
     
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .about .about-content .right a:hover{
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.37);
@@ -326,7 +327,7 @@ backdrop-filter: blur( 19.0px );
     text-align: center;
     padding: 20px 25px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .services .serv-content .card:hover{
     box-shadow: 0 12px 10px 0px rgb(0 0 0 / 20%);
@@ -334,7 +335,7 @@ backdrop-filter: blur( 19.0px );
     -webkit-backdrop-filter: blur( 0.0px );
 }
 .services .serv-content .card .box{
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .services .serv-content .card:hover .box{
     transform: scale(1.05);
@@ -342,7 +343,7 @@ backdrop-filter: blur( 19.0px );
 .services .serv-content .card i{
     font-size: 50px;
     color:  var(--first-color);
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 }
 .services .serv-content .card:hover i{
     color:  var(--first-color);
@@ -381,7 +382,7 @@ backdrop-filter: blur( 19.0px );
     margin-top: 20px;
     border-radius: 50px;
    
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .skills .skills-content .left a:hover{
     color:  #f1630f;
@@ -432,7 +433,7 @@ backdrop-filter: blur( 19.0px );
 
 /* teams section styling */
 .teams .title::after{
-    content: "who with me";
+    content: "Our Projects";
 }
 .teams .carousel .card{
     display: flex;
@@ -443,7 +444,7 @@ backdrop-filter: blur( 19.0px );
     background-size: cover;
     text-align: center;
     overflow: hidden;
-    transition: all 0.3s ease;   
+    transition: all 0.5s ease;   
 }
 .portfolio__link{
     position: absolute;
@@ -463,7 +464,10 @@ backdrop-filter: blur( 19.0px );
     bottom: 0;
 }
 .portfolio__link-name{
-    color: var(--dark-color);
+    color:#fff;
+    background: var(--first-color);
+    padding: 6px 18px;
+    border-radius: 50px;
 }
 .owl-dots{
     text-align: center;
@@ -476,7 +480,7 @@ backdrop-filter: blur( 19.0px );
     outline: none!important;
     border-radius: 50%;
     border: 2px solid  var(--first-color)!important;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .owl-dot.active{
     width: 35px;
@@ -490,6 +494,7 @@ backdrop-filter: blur( 19.0px );
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
+    background-color: #f5fafd;
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -518,10 +523,11 @@ backdrop-filter: blur( 19.0px );
     color:  var(--first-color);
 }
 .contact .contact-content .info .head{
+    color: var(--two-color);
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: var(--first-color);
 }
 .contact .right form .fields{
     display: flex;
@@ -546,42 +552,44 @@ backdrop-filter: blur( 19.0px );
 .contact .right form .textarea textarea{
     height: 100%;
     width: 100%;
-    border: 1px solid lightgrey;
+    border: 1px solid #000;
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
     font-size: 17px;
     font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus{
-    border-color: #b3b3b3;
+    border-color: var(--two-color);
+    
 }
 .contact .right form .textarea textarea{
     padding-top: 10px;
     resize: none;
 }
 .contact .right form .button{
-    height: 47px;
-    width: 170px;
+    height: 40px;
+    width: 150px;
 }
 .contact .right form .button button{
     width: 100%;
     height: 100%;
-    border: 2px solid  var(--first-color);
     background:  var(--first-color);
     color: #fff;
     outline: none;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .contact .right form .button button:hover{
-    color:  var(--first-color);
-    background: #ffe0b2;
+    
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 19.0px );
+    -webkit-backdrop-filter: blur( 19.0px );
 }
 
 /* footer section styling */
@@ -634,8 +642,8 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 4.4rem;
-        background-color: rgba(255,255,255,.7);
-        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.9);
+        
         text-align: center;
         padding-top: 30px;
         transition: all 0.5s ease;
@@ -651,11 +659,11 @@ footer span a:hover{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
-        color: #000;
+        color: #fff;
     }
     .navbar.sticky .menu li a{
         
-        color: #000;
+        color: #fff;
     }
     .title1{
         font-size: 30px;
