@@ -61,6 +61,16 @@ section .title{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
+.title1{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+}
+.title1 span{
+color: #f1630f ; font-family: 'Satisfy', cursive; font-size:50px;
+}
 section .title::before{
     content: "";
     position: absolute;
@@ -165,7 +175,7 @@ backdrop-filter: blur( 19.0px );
     color: #fff;
     z-index: 9999;
     font-size: 30px;
-    border-radius: 6px;
+    border-radius:6rem;
     border-bottom-width: 2px;
     cursor: pointer;
     opacity: 0;
@@ -218,12 +228,8 @@ backdrop-filter: blur( 19.0px );
 }
 .home .home-content a{
     display: inline-block;
-    
     background: rgba( 0, 0, 0, 0.75 );
-    
-    
-   
-   color: var(--one-color);
+    color: var(--one-color);
     font-size: 23px;
     padding: 12px 32px;
     margin-top: 20px;
@@ -286,8 +292,18 @@ backdrop-filter: blur( 19.0px );
     background: none;
 }
 
+/* teams section styling */
+
+
+.teams1{
+    background: #000;
+    color: #E6F4EA;
+    padding: 30px 0;
+}
+
+
 /* services section styling */
-.services, .teams{
+.services, .teams, .skills{
     color:#000 ;
     /* background-image: linear-gradient( 180deg,  #f1630f   20%, #ffc09c 100%); */
     background: #f5fafd;
@@ -298,28 +314,23 @@ backdrop-filter: blur( 19.0px );
 }
 .services .title::after,
 .teams .title::after{
-    background:#f5fafd;
-    
+    background:#f5fafd;   
     content: "what we provide";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
     margin-bottom:2rem;
     background: rgba( 255, 255, 255, 1.00 );
-    box-shadow: 0 12px 10px 0px rgb(0 0 0 / 20%);
-backdrop-filter: blur( 0.0px );
--webkit-backdrop-filter: blur( 0.0px );
-border-radius: 1rem;
+    border-radius: 1rem;
     text-align: center;
     padding: 20px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-   
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-   
+    box-shadow: 0 12px 10px 0px rgb(0 0 0 / 20%);
+    backdrop-filter: blur( 0.0px );
+    -webkit-backdrop-filter: blur( 0.0px );
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -346,6 +357,7 @@ border-radius: 1rem;
 
 .skills .title::after{
     content: "what i know";
+    background: #f5fafd;
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -366,7 +378,7 @@ border-radius: 1rem;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
-    border-radius: 6px;
+    border-radius: 50px;
    
     transition: all 0.3s ease;
 }
@@ -642,6 +654,14 @@ footer span a:hover{
         margin: 20px 0;
         font-size: 25px;
     }
+    .title1{
+        font-size: 30px;
+    }
+    .title1 span{
+        font-size: 30px;
+        font-weight: 800;
+    }
+
     .home .home-content .text-2{
         font-size: 70px;
     }
