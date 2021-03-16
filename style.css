@@ -69,7 +69,7 @@ section .title{
     font-family: 'Ubuntu', sans-serif;
 }
 .title1 span{
-color: #f1630f ; font-family: 'Satisfy', cursive; font-size:50px;
+color:  var(--two-color) ; font-family: 'Satisfy', cursive; font-size:50px;
 }
 section .title::before{
     content: "";
