@@ -280,16 +280,17 @@ backdrop-filter: blur( 19.0px );
     background:  var(--first-color);
     color: #fff;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 300;
     padding: 10px 30px;
     margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid  var(--first-color);
+    border-radius:50px;
+    
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color:  var(--first-color);
-    background: none;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 19.0px );
+    -webkit-backdrop-filter: blur( 19.0px );
 }
 
 /* teams section styling */
