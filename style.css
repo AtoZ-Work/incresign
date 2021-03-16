@@ -288,7 +288,7 @@ backdrop-filter: blur( 19.0px );
 
 /* services section styling */
 .services, .teams{
-    color:#000613 ;
+    color:#000 ;
     /* background-image: linear-gradient( 180deg,  #f1630f   20%, #ffc09c 100%); */
     background: #f5fafd;
 }
@@ -299,24 +299,26 @@ backdrop-filter: blur( 19.0px );
 .services .title::after,
 .teams .title::after{
     background:#f5fafd;
-    content: "what i provide";
+    
+    content: "what we provide";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
     margin-bottom:2rem;
-    background: rgba( 255, 255, 255, 0.75 );
-    box-shadow: 0 2px 8px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 0.0px );
-    -webkit-backdrop-filter: blur( 0.0px );
-  
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: rgba( 255, 255, 255, 1.00 );
+    box-shadow: 0 12px 10px 0px rgb(0 0 0 / 20%);
+backdrop-filter: blur( 0.0px );
+-webkit-backdrop-filter: blur( 0.0px );
+border-radius: 1rem;
     text-align: center;
     padding: 20px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: rgba( 255, 255, 255, 1.00 );
+   
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
    
 }
 .services .serv-content .card .box{
@@ -337,6 +339,7 @@ backdrop-filter: blur( 19.0px );
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    color: var(--two-color);
 }
 
 /* skills section styling */
