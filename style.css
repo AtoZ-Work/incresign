@@ -175,7 +175,7 @@ backdrop-filter: blur( 19.0px );
     color: #fff;
     z-index: 9999;
     font-size: 30px;
-    border-radius:6rem;
+    border-radius:2px;
     border-bottom-width: 2px;
     cursor: pointer;
     opacity: 0;
@@ -184,11 +184,12 @@ backdrop-filter: blur( 19.0px );
 }
 .scroll-up-btn.show{
     bottom: 30px;
-    opacity: 1;
+    opacity: .75;
     pointer-events: auto;
 }
 .scroll-up-btn:hover{
-    filter: brightness(90%);
+    
+    opacity: 1;
 }
 
   
@@ -298,7 +299,7 @@ backdrop-filter: blur( 19.0px );
 
 .teams1{
     background: #000;
-    color: #E6F4EA;
+    color: #fff;
     padding: 30px 0;
 }
 
