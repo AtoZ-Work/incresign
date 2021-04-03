@@ -11,9 +11,9 @@ html{
     scroll-behavior: smooth;
 }
 :root{
---first-color:  #000000;
+--first-color:   #0e1e25;
 --one-color: #E6F4EA ;
---two-color: #fb8500 ;
+--two-color: #fb8500;
 }
 /* custom scroll bar */
 ::-webkit-scrollbar {
@@ -106,7 +106,8 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background:  #000;
+    background:   #0e1e25;
+    /* background:  #0e1e25; #00c7b6 */
 box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.37);
 backdrop-filter: blur( 19.0px );
 -webkit-backdrop-filter: blur( 19.0px );
@@ -298,8 +299,8 @@ backdrop-filter: blur( 19.0px );
 
 
 .teams1{
-    background: #000;
-    color: #fff;
+    background: var(--first-color);
+    color:var(--one-color);
     padding: 30px 0;
 }
 
@@ -317,7 +318,7 @@ backdrop-filter: blur( 19.0px );
 .services .title::after,
 .teams .title::after{
     background:#f5fafd;   
-    content: "what we provide";
+    content: "what we do";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -374,7 +375,7 @@ backdrop-filter: blur( 19.0px );
 }
 .skills .skills-content .left a{
     display: inline-block;
-    background:  #f1630f;
+    background:  var(--two-color);
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -385,7 +386,7 @@ backdrop-filter: blur( 19.0px );
     transition: all 0.5s ease;
 }
 .skills .skills-content .left a:hover{
-    color:  #f1630f;
+    color:  var(--two-color);
     background: none;
 }
 .skills .skills-content .right .bars{
