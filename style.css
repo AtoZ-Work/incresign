@@ -33,7 +33,7 @@ html{
 /* all similar content styling codes */
 section{
     padding: 100px 0;
-    background-color: #f5fafd;
+    background-color: var(--one-color);
 }
 .max-width{
     max-width: 1300px;
@@ -150,7 +150,7 @@ backdrop-filter: blur( 19.0px );
    
 }
 .navbar.sticky .menu li a{
-    color:#ccc;
+    color:var(--one-color);
 }
 .navbar.sticky .menu li a:hover{
     color:  var(--two-color);
@@ -158,7 +158,7 @@ backdrop-filter: blur( 19.0px );
 
 /* menu btn styling */
 .menu-btn{
-    color: #fff;
+    color: var(--one-color);
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -173,7 +173,7 @@ backdrop-filter: blur( 19.0px );
     bottom: 10px;
     text-align: center;
     line-height: 45px;
-    color: #fff;
+    color: var(--one-color);
     z-index: 9999;
     font-size: 30px;
     border-radius:2px;
@@ -230,27 +230,26 @@ backdrop-filter: blur( 19.0px );
 }
 .home .home-content a{
     display: inline-block;
-    background: rgba( 0, 0, 0, 0.75 );
+    background: rgba( 0, 12, 37, 0.75 );
     color: var(--one-color);
     font-size: 23px;
     padding: 10px 20px;
     margin-top: 20px;
     font-weight: 300;
     border-radius: 50px;
-   
     transition: all 0.5s ease;
 }
 .home .home-content a:hover{
    
-   background: #000;
+   background: var(--first-color);
    color: var(--two-color);
-    box-shadow: 0 2px 8px 0 rgba(226, 228, 255, 0.315);
+    box-shadow: 0 2px 8px 0 rgba(255, 255, 255, 0.315);
 }
 
 /* about section styling */
 .about .title::after{
     content: "who we are";
-    background: #f5fafd;
+    background: var(--one-color);
 }
 .about .about-content .left{
     width: 45%;
@@ -265,7 +264,7 @@ backdrop-filter: blur( 19.0px );
     width: 55%;
 }
 .about{
-    background:#f5fafd;
+    background:var(--one-color);
 }
 .about .about-content .right .text{
     font-size: 25px;
@@ -280,8 +279,8 @@ backdrop-filter: blur( 19.0px );
 }
 .about .about-content .right a{
     display: inline-block;
-    background:  #000;
-    color: #fff;
+    background:  var(--first-color);
+    color: var(--one-color);
     font-size: 18px;
     font-weight: 300;
     padding: 6px 18px;
@@ -302,17 +301,23 @@ backdrop-filter: blur( 19.0px );
 
 
 .teams1{
-    background: #000c25;
-    color:#ccc;
+    background: var(--first-color);
+    color:var(--one-color);
     padding: 30px 0;
 }
-
+.icon{
+    color:var(--one-color);
+    margin: 0px 5px 0px 5px;
+}
+.icon:hover{
+    color:var(--two-color);
+}
 
 /* services section styling */
 .services, .teams, .skills{
     color:#000 ;
     /* background-image: linear-gradient( 180deg,  #f1630f   20%, #ffc09c 100%); */
-    background: #f5fafd;
+    background: var(--one-color);
 }
 .services .title::before,
 .teams .title::before{
@@ -320,13 +325,13 @@ backdrop-filter: blur( 19.0px );
 }
 .services .title::after,
 .teams .title::after{
-    background:#f5fafd;   
+    background:var(--one-color);   
     content: "what we do";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
     margin-bottom:2rem;
-    background: rgba( 255, 255, 255, 1.00 );
+    background: #fff;
    
     text-align: center;
     padding: 20px 25px;
@@ -363,7 +368,7 @@ backdrop-filter: blur( 19.0px );
 
 .skills .title::after{
     content: "what i know";
-    background: #f5fafd;
+    background: var(--one-color);
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -378,19 +383,17 @@ backdrop-filter: blur( 19.0px );
 }
 .skills .skills-content .left a{
     display: inline-block;
-    background:  var(--two-color);
-    color: #fff;
+    background:  var(--first-color);
+    color: var(--one-color);
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 50px;
-   
     transition: all 0.5s ease;
 }
 .skills .skills-content .left a:hover{
     color:  var(--two-color);
-    background: none;
 }
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
@@ -417,7 +420,7 @@ backdrop-filter: blur( 19.0px );
     height: 100%;
     left: 0;
     top: 0;
-    background:  #000c25;
+    background:  var(--first-color);
 }
 .skills-content .right .html::before{
     width: 90%;
@@ -468,14 +471,13 @@ backdrop-filter: blur( 19.0px );
     bottom: 0;
 }
 .portfolio__link-name{
-    color:#fff;
-    background: #000;
+    color:var(--one-color);
+    background: var(--first-color);
     padding: 6px 18px;
     border-radius: 50px;
 }
 .portfolio__link-name:hover{
-    color:#fb8500;
-    background: var(--first-color);
+    color:var(--two-color);
 }
 .owl-dots{
     text-align: center;
@@ -502,7 +504,7 @@ backdrop-filter: blur( 19.0px );
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
-    background-color: #f5fafd;
+    background-color: var(--one-color);
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -584,8 +586,8 @@ backdrop-filter: blur( 19.0px );
 .contact .right form .button button{
     width: 100%;
     height: 100%;
-    background:  #000;
-    color: #fff;
+    background:  var(--first-color);
+    color: var(--one-color);
     outline: none;
     font-size: 18px;
     font-weight: 300;
@@ -595,7 +597,6 @@ backdrop-filter: blur( 19.0px );
 }
 .contact .right form .button button:hover{
     color: var(--two-color);
-    background:  var(--first-color);
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.37);
     backdrop-filter: blur( 19.0px );
     -webkit-backdrop-filter: blur( 19.0px );
@@ -605,7 +606,7 @@ backdrop-filter: blur( 19.0px );
 footer{
     background: var(--first-color);
     padding: 15px 23px;
-    color: #fff;
+    color: var(--one-color);
     text-align: center;
 }
 footer span a{
@@ -651,8 +652,7 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 4.4rem;
-        background-color: rgba(0, 0, 0, 0.9);
-        
+        background-color: rgba(0, 12, 37, 0.9);
         text-align: center;
         padding-top: 30px;
         transition: all 0.5s ease;
@@ -668,11 +668,10 @@ footer span a:hover{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
-        color: #fff;
+        color: var(--one-color);
     }
     .navbar.sticky .menu li a{
-        
-        color: #fff;
+        color: var(--one-color);
     }
     .title1{
         font-size: 30px;
