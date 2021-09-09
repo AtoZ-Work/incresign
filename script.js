@@ -42,7 +42,7 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Digital Marketing Company?", "Web Development Company?", "Branding Company?", "Web Designing Company?", "Content Writing Company?", "UI/UX designing Company?"],
+        strings: ["Digital Marketing Company", "Web Development Company", "Branding Company", "Web Designing Company", "Content Writing Company", "UI/UX designing Company"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
