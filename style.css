@@ -12,9 +12,12 @@ html{
 }
 :root{
 --first-color:   #000c25;
---one-color: #E6F4EA ;
+--one-color:  #fafafa;
 --two-color: #fb8500;
+--pink:#FC014C;
 --white:#ffffff;
+--bro:#5D5346;
+--bg-color:#fff;
 }
 /* custom scroll bar */
 ::-webkit-scrollbar {
@@ -34,7 +37,7 @@ html{
 /* all similar content styling codes */
 section{
     padding: 100px 0;
-    background-color: var(--one-color);
+    background-color: var(--bg-color);
 }
 .max-width{
     max-width: 1300px;
@@ -58,20 +61,23 @@ section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 900;
+    
     margin-bottom: 60px;
     padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .title1{
     position: relative;
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    font-family: 'Ubuntu', sans-serif;
+
+    font-family: 'Courgette', cursive;
+    
 }
 .title1 span{
-color:  var(--two-color) ; font-family: 'Satisfy', cursive; font-size:50px;
+color:  var(--white) ;
 }
 section .title::before{
     content: "";
@@ -88,10 +94,13 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
+    font-weight: 500;
     color: var(--two-color);
     padding: 0 5px;
     background: var(--white);
     transform: translateX(-50%);
+   
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /* navbar styling */
@@ -107,7 +116,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background:  #000c25;
+    background:  var(--first-color);
     /* background:  #0e1e25; #00c7b6 */
 box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.37);
 backdrop-filter: blur( 19.0px );
@@ -119,24 +128,28 @@ backdrop-filter: blur( 19.0px );
     justify-content: space-between;
 }
 .navbar .logo a{
-    color:  var(--white);
-    font-size: 35px;
+    color:  var(--one-color);
+    font-size: 40px;
     font-weight: 600;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .navbar.sticky .logo a{
-    color:  var(--white);
+    color:  var(--one-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     
 }
  .navbar .logo a span{
-    color:   var(--two-color);
+    color: var(--two-color);
     transition: all 0.5s ease;
+    
 }
 .navbar.sticky .logo a span{
-    color:  var(--two-color);
+    color: var(--two-color);
 }
 .navbar .menu li{
     list-style: none;
     display: inline-block;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .navbar .menu li a{
     display: block;
@@ -144,23 +157,24 @@ backdrop-filter: blur( 19.0px );
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     transition: color 0.5s ease;
 }
 .navbar .menu li a:hover{
-    color:  var(--two-color);
+    color: var(--two-color);
    
 }
 .navbar.sticky .menu li a{
     color:var(--one-color);
 }
 .navbar.sticky .menu li a:hover{
-    color:  var(--two-color);
+    color: var(--two-color);
 }
 
 /* menu btn styling */
 .menu-btn{
     color: var(--one-color);
-    font-size: 23px;
+    font-size: 35px;
     cursor: pointer;
     display: none;
 }
@@ -192,7 +206,9 @@ backdrop-filter: blur( 19.0px );
 }
 .scroll-up-btn:hover{  
     opacity: 1;
+    
     color: var(--white);
+    
 }
 
   
@@ -201,7 +217,7 @@ backdrop-filter: blur( 19.0px );
     display: flex;
     background: url("images/bg.jpg") no-repeat left;
     height: 100vh;
-    color: #000;
+    color: var(--first-color);
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
@@ -221,12 +237,14 @@ backdrop-filter: blur( 19.0px );
     margin-left: -3px;
 }
 .home .home-content .text-3{
-    font-size: 40px;
+    font-size: 27px;
     margin: 5px 0;
+    line-height: 40px;
 }
 .home .home-content .text-3 span{
-    color:  var(--one-color);
+    color: var(--white);
     font-weight: 500;
+    font-family: 'Ubuntu';
 }
 .home .home-content a{
     display: inline-block;
@@ -243,6 +261,8 @@ backdrop-filter: blur( 19.0px );
     font-weight: 300;
     border-radius: 50px;
     transition: all 0.5s ease;
+    
+
 }
 .home .home-content a:hover{
    color: var(--white);
@@ -252,7 +272,7 @@ backdrop-filter: blur( 19.0px );
 /* about section styling */
 .about .title::after{
     content: "who we are";
-    background: var(--one-color);
+    background: var(--bg-color);
 }
 .about .about-content .left{
     width: 45%;
@@ -262,28 +282,35 @@ backdrop-filter: blur( 19.0px );
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
+    filter: drop-shadow(-10px 10px 0px #000c2511);
 }
 .about .about-content .right{
     width: 55%;
 }
 .about{
-    background:var(--one-color);
+    background: var(--bg-color);
 }
 .about .about-content .right .text{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+
 }
 .about .about-content .right .text span{
-    color:  var(--two-color);
+    font-family: 'Ubuntu';
+    font-size: 30px;
+    color: var(--two-color);
+    
 }
 .about .about-content .right p{
     text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    color: var(--bro);
 }
 .about .about-content .right a{
     display: inline-block;
     background: var(--first-color);
-    color: var(--two-color); 
+    color:var(--two-color) ;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.37);
     backdrop-filter: blur( 19.0px );
     -webkit-backdrop-filter: blur( 19.0px );
@@ -296,6 +323,7 @@ backdrop-filter: blur( 19.0px );
     transition: all 0.5s ease;
 }
 .about .about-content .right a:hover{
+   
     color: var(--white);
 }
 
@@ -307,17 +335,19 @@ backdrop-filter: blur( 19.0px );
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.37);
     backdrop-filter: blur( 19.0px );
     -webkit-backdrop-filter: blur( 19.0px );
-    color:var(--white);
-    padding: 30px 0;
+    color: var(--two-color);
+    padding: 30px 10px;
 }
+
+
 .icon{
-    background:var(--first-color);
-    padding: 8px 2px;
-    border-radius: 30px;
-    color:var(--two-color);
+    
+    padding: 8px 5px;
+    border-radius: 35px;
+    color:var(--one-color);
     backdrop-filter: blur( 20.0px );
     -webkit-backdrop-filter: blur( 20.0px );
-    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
     margin: 0px 5px 0px 5px;
 }
 .title1 .box .icon i{
@@ -326,19 +356,14 @@ backdrop-filter: blur( 19.0px );
     margin: 6px;
 }
 .icon:hover{
-    color:var(--first-color);
-    background:var(--white) !important;
-box-shadow: 0 8px 32px 0 rgba( 255, 255, 255, 0.37 );
-
-
-
+    color: var(--two-color);
+    border: 2px solid rgb(255, 255, 255);
 }
 
 /* services section styling */
-.services, .teams, .skills{
+.services, .skills{
     color:#000 ;
-    /* background-image: linear-gradient( 180deg,  #f1630f   20%, #ffc09c 100%); */
-    background: var(--one-color);
+     background: #fff;
 }
 .services .title::before,
 .teams .title::before{
@@ -346,23 +371,51 @@ box-shadow: 0 8px 32px 0 rgba( 255, 255, 255, 0.37 );
 }
 .services .title::after,
 .teams .title::after{
-    background:var(--one-color);   
+     background: #fff; 
     content: "what we do";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
+    
     margin-bottom:2rem;
-    background: var(--white);
-   
-    text-align: center;
-    padding: 20px 25px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: left;
+    padding: 35px 40px;
     cursor: pointer;
+    border: 2px solid #000c25;
+   
+}
+
+.service-button{
+    display: inline-block;
+    
+    color: var(--two-color);
+    border: 2px solid rgba( 0, 0, 0, 1 );
+    font-size: 16px;
+    font-weight: 300;
+    padding: 6px 16px;
+    margin-top: 20px;
+    border-radius:50px;
     transition: all 0.5s ease;
 }
-.services .serv-content .card:hover{
-    box-shadow: 0 12px 10px 0px rgb(0 0 0 / 20%);
+.services .serv-content  .card:hover .service-button:hover{
+    border: 2px solid rgba( 255, 255, 255, 1);
+}
+hr{
+    width:25%;
+    font-weight:10px;
+}
+
+.services .serv-content  .card:hover{
     backdrop-filter: blur( 0.0px );
     -webkit-backdrop-filter: blur( 0.0px );
+    background-color:#000c25;
+    color: rgba( 255, 255, 255, 1 );
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+}
+.services .serv-content  .card:hover .service-button{
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
 }
 .services .serv-content .card .box{
     transition: all 0.5s ease;
@@ -372,24 +425,24 @@ box-shadow: 0 8px 32px 0 rgba( 255, 255, 255, 0.37 );
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color:  var(--first-color);
-    transition: color 0.5s ease;
+    margin-bottom: 15px;
+    
 }
-.services .serv-content .card:hover i{
-    color:  var(--first-color);
-}
+
 .services .serv-content .card .text{
     font-size: 25px;
-    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Ubuntu';
     margin: 10px 0 7px 0;
-    color: var(--two-color);
+    color:var(--two-color)
+   
 }
 
 /* skills section styling */
 
 .skills .title::after{
     content: "work with us";
-    background: var(--one-color);
+    background: #fff;
 }
 /* .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -402,11 +455,22 @@ box-shadow: 0 8px 32px 0 rgba( 255, 255, 255, 0.37 );
 }
 .skills .skills-content .left .text{
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 5px;
+    font-family: 'Poppins';
+    color: #fb8500;
+   
+}
+
+.hashs{
+    color:var(--first-color);
+    font-size:30px important ;
+    font-weight: 500;
 }
 .skills .skills-content .left p{
     text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    color: var(--first-color);
 }
 .skills .skills-content .left a{
     display: inline-block;
@@ -439,15 +503,15 @@ box-shadow: 0 8px 32px 0 rgba( 255, 255, 255, 0.37 );
 .skills .skills-content .right img{
     height: 30rem;
     width: 30rem;
-    
+    filter: drop-shadow(10px 10px 0px #000c2511);
     object-fit: cover;
     border-radius: 6px;
 }
 
-.skills .skills-content .left span{
+/* .skills .skills-content .left span{
     font-weight: 500;
     font-size: 18px;
-}
+} */
 .skills .skills-content .left .line{
     height: 5px;
     width: 100%;
@@ -479,8 +543,12 @@ box-shadow: 0 8px 32px 0 rgba( 255, 255, 255, 0.37 );
 }
 
 /* teams section styling */
+.teams{
+    background-color:#fff;
+}
 .teams .title::after{
-    content: "Our Projects";
+    content: "our projects";
+    background-color:#fff;
 }
 .teams .carousel .card{
     display: flex;
@@ -491,7 +559,7 @@ box-shadow: 0 8px 32px 0 rgba( 255, 255, 255, 0.37 );
     background-size: cover;
     text-align: center;
     overflow: hidden;
-    transition: all 0.5s ease;   
+    transition: all 3s ease-in-out 0s;   
 }
 .portfolio__link{
     position: absolute;
@@ -501,29 +569,37 @@ box-shadow: 0 8px 32px 0 rgba( 255, 255, 255, 0.37 );
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255,255,255,.3);
-    
     cursor: pointer;
-    backdrop-filter: blur(10px);
+   
     transition: .3s;
 }
+.nome{
+    margin-top: auto;
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #afafaf;
+    padding: 6px 0;
+    background: var(--first-color);
+   
+    
+    
+}
+.portfolio__link-name{
+    margin-top: auto;
+    margin-bottom: 0px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #afafaf;
+    padding: 6px 20px;
+    background: var(--first-color);
+}
+
 .teams .carousel .card:hover .portfolio__link{
     bottom: 0;
 }
-.portfolio__link-name{
-    background: var(--first-color);
-    color: var(--two-color); 
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.37);
-    backdrop-filter: blur( 19.0px );
-    -webkit-backdrop-filter: blur( 19.0px );
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-    padding: 6px 18px;
-    border-radius: 50px;
-}
-.portfolio__link-name:hover{
-    color: var(--white);
-}
-.owl-dots{
+.owl-dots{   
     text-align: center;
     margin-top: 20px;
 }
@@ -548,7 +624,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
-    background-color: var(--one-color);
+    background: var(--bg-color);
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -557,9 +633,11 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    
 }
 .contact .contact-content .left p{
     text-align: justify;
+    color: var(--bro);
 }
 .contact .contact-content .left .icons{
     margin: 10px 0;
@@ -574,14 +652,19 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .contact .contact-content .row i{
     font-size: 25px;
+    width: 20px;
     color:  var(--first-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .contact .contact-content .info .head{
     color: var(--two-color);
+   
+  
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
     color: var(--first-color);
+    
 }
 .contact .right form .fields{
     display: flex;
@@ -606,7 +689,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 .contact .right form .textarea textarea{
     height: 100%;
     width: 100%;
-    border: 1px solid #000;
+    border: 2px solid var(--first-color);
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
@@ -616,7 +699,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus{
-    border-color: var(--two-color);
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
     
 }
 .contact .right form .textarea textarea{
@@ -655,7 +738,7 @@ footer{
     text-align: center;
 }
 footer span a{
-    color:  var(--two-color);
+    color: var(--two-color);
     text-decoration: none;
 }
 footer span a:hover{
@@ -766,10 +849,10 @@ footer span a:hover{
     .skills .skills-content .right{
         display: flex;
         justify-content: center;
-        margin: 0 auto 60px;
+        margin: 35px auto 60px;
     }
     .icon{
-        padding: 11px 2px;
+        padding: 10px 2px;
         margin: 0px 0px 0px 0px;
     }
     .title1 .box .icon i{
@@ -796,7 +879,7 @@ footer span a:hover{
         width: 100%;
     }
     .icon{
-        padding: 11px 2px;
+        padding: 10px 2px;
         margin: 0px 0px 0px 0px;
     }
     .title1 .box .icon i{
@@ -832,7 +915,7 @@ footer span a:hover{
         line-height: 43px;
     }
     .icon{
-        padding: 11px 2px;
+        padding: 10px 2px;
         margin: 0px 0px 0px 0px;
     }
     .title1 .box .icon i{
