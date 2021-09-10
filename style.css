@@ -13,8 +13,8 @@ html {
 }
 
 :root {
-    --first-color: #000c25;
-    --two-color: #fb8500;
+    --first-color: #000f2e;
+    --two-color: #f07001;
     --white: #EBF5FB;
 }
 
@@ -247,7 +247,7 @@ section .title::after {
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu';
     backdrop-filter: blur( 0.0px);
     -webkit-backdrop-filter: blur( 0.0px);
 }
@@ -326,6 +326,7 @@ section .title::after {
 
 .about {
     background: var(--white);
+    color: var(--first-color);
 }
 
 .about .about-content .right .text {
@@ -404,7 +405,7 @@ section .title::after {
 
 .services,
 .skills {
-    color: #000;
+    color: var(--first-color);
     background: var(--white);
 }
 
@@ -434,7 +435,7 @@ section .title::after {
 .service-button {
     display: inline-block;
     color: var(--two-color);
-    border: 2px solid rgba( 0, 0, 0, 1);
+    border: 2px solid var(--first-color);
     font-size: 16px;
     font-weight: 300;
     padding: 6px 16px;
@@ -518,7 +519,7 @@ hr {
     font-weight: 700;
     margin-bottom: 5px;
     font-family: 'Poppins';
-    color: #fb8500;
+    color: var(--two-color);
 }
 
 .hashs {
@@ -619,6 +620,7 @@ hr {
 
 .teams {
     background-color: var(--white);
+    color: var(--first-color);
 }
 
 .teams .title::after {
@@ -706,6 +708,10 @@ hr {
 .contact .title::after {
     content: "get in touch";
     background: var(--white);
+}
+
+#contact {
+    color: var(--first-color);
 }
 
 .contact .contact-content .column {
